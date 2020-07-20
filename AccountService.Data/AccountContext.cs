@@ -1,8 +1,5 @@
 ﻿using Account.Data.Entites;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Account.Data
 {
@@ -12,6 +9,7 @@ namespace Account.Data
         {
 
         }
+
         public AccountContext()
         { }
 

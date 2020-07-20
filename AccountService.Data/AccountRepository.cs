@@ -2,10 +2,10 @@
 using Account.Service.Intefaces;
 using Account.Service.Models;
 using AutoMapper;
+using Exceptions;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
 namespace Account.Data
@@ -19,35 +19,26 @@ namespace Account.Data
             _accountContext = accountContext;
             _mapper = mapper;
         }
+
         public async Task<AccountModel> GetAccountInfoAsync(Guid CustomerId)
         {
             try
             {
                 AccountEntity accountEntity = await _accountContext.Accounts
-                    .Include(a => a.Customer)
-                    .FirstOrDefaultAsync(a => a.CustomerId.ToString()==(CustomerId.ToString().ToUpper()));
-                AccountModel accountModel = _mapper.Map<AccountModel>(accountEntity);
-                return accountModel;
-
-            }
-            
+                                .FirstOrDefaultAsync(a => a.CustomerId.ToString()==(CustomerId.ToString().ToUpper()));
+                if (accountEntity != null)
+                {
+                    AccountModel accountModel = _mapper.Map<AccountModel>(accountEntity);
+                    return accountModel;
+                }
+                else
+                    throw new AccountNotFoundException();
+            }      
          catch(Exception ex)
             {
-                return null;
+
+                throw new SystemException();
             }
-                ///check fi we need it
-                //AccountModel accountModel = new AccountModel()
-                //{
-                //    Balance = accountEntity.Balance,
-                //    OpenDate = accountEntity.OpenDate,
-                //    FirstName = accountEntity.Customer.FirstName,
-                //    LastName = accountEntity.Customer.LastName
-                //};
-
-            
-
         }
-
-
     }
 }

@@ -329,3 +329,10 @@ C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Api\bin\Debug\n
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.MvcApplicationPartsAssemblyInfo.cache
+F:\Brix\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+F:\Brix\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+F:\Brix\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Brix\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.MvcApplicationPartsAssemblyInfo.cs
+F:\Brix\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\Exceptions.dll
+F:\Brix\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\Exceptions.pdb

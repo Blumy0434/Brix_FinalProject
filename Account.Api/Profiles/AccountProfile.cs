@@ -27,9 +27,6 @@ namespace Account.WebApi.Profiles
             CreateMap<CustomerModel, CustomerEntity>();
             CreateMap<CustomerEntity, CustomerModel>();
             CreateMap<AccountRegisterModel, AccountEntity>();
-            
-
-
         }
     }
 }

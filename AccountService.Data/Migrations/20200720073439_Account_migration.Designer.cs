@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Account.Data.Migrations
 {
     [DbContext(typeof(AccountContext))]
-    [Migration("20200720074630_Account_migration")]
+    [Migration("20200720073439_Account_migration")]
     partial class Account_migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
