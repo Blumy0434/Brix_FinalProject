@@ -8,5 +8,7 @@ namespace Account.Service.Models
         public Guid CustomerId { get; set; }        
         public DateTime OpenDate { get; set; }
         public float Balance { get; set; }
+        public  string PasswordHash { get; set; }
+        public string PassowrdSalt { get; set; }
     }
 }

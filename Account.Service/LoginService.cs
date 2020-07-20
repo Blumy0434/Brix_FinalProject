@@ -2,7 +2,6 @@
 using Account.Service.Models;
 using Exceptions;
 using System;
-using System.Security.Cryptography;
 using System.Threading.Tasks;
 
 namespace Account.Service
@@ -20,11 +19,11 @@ namespace Account.Service
             bool isCustomerExist = await _loginRepository.IsCustomerExistAsync(email, password);
             if (isCustomerExist)
             {
-                return await _loginRepository.LoginAsync(email, password);
+                return await _loginRepository.LoginAsync(email);
             }
             else
             {
-                throw new CustomerNotFoundException();
+                throw new AccountNotFoundException();
             }
         }
 
@@ -33,9 +32,13 @@ namespace Account.Service
             bool isEmailValid = await _loginRepository.IsEmailValidAsync(customerModel.Email);
             if (isEmailValid)
             {
-                customerModel.Id = Guid.NewGuid();               
-                AccountRegisterModel account = new AccountRegisterModel
+                string passowrdSalt = Hashing.GetSalt();
+                customerModel.Id = Guid.NewGuid();
+                AccountRegisterModel account = new AccountRegisterModel()
                 {
+                   
+                    PassowrdSalt = passowrdSalt,
+                    PasswordHash = Hashing.GenerateHash(customerModel.Password, passowrdSalt),
                     Id = Guid.NewGuid(),
                     CustomerId = customerModel.Id,
                     Balance = 1000,
@@ -45,8 +48,10 @@ namespace Account.Service
             }
             else
             {
-                throw new DuplicateEmailException();
+                throw new SystemException();
+                //   throw new DuplicateEmailException();
             }
+
         }
     }
 }
