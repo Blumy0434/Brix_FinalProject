@@ -5,7 +5,6 @@ using AutoMapper;
 using Exceptions;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
 namespace Account.Data
@@ -14,7 +13,7 @@ namespace Account.Data
     {
         private readonly IMapper _mapper;
         private readonly AccountContext _accountContext;
-        public AccountRepository(IMapper mapper,AccountContext accountContext)
+        public AccountRepository(IMapper mapper, AccountContext accountContext)
         {
             _accountContext = accountContext;
             _mapper = mapper;
@@ -25,7 +24,7 @@ namespace Account.Data
             try
             {
                 AccountEntity accountEntity = await _accountContext.Accounts
-                                .FirstOrDefaultAsync(a => a.CustomerId.ToString()==(CustomerId.ToString().ToUpper()));
+                                .FirstOrDefaultAsync(a => a.CustomerId.ToString() == (CustomerId.ToString().ToUpper()));
                 if (accountEntity != null)
                 {
                     AccountModel accountModel = _mapper.Map<AccountModel>(accountEntity);
@@ -33,12 +32,16 @@ namespace Account.Data
                 }
                 else
                     throw new AccountNotFoundException();
-            }      
-         catch(Exception ex)
+            }
+            catch(AccountNotFoundException ex)
             {
-
+                throw ex;
+            }
+            catch(Exception)
+            {
                 throw new SystemException();
             }
         }
     }
 }
+

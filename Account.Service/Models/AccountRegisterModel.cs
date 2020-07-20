@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Account.Service.Models
 {
-   public class AccountRegisterModel
+    public class AccountRegisterModel
     {
         public Guid Id { get; set; }
         public Guid CustomerId { get; set; }        
