@@ -20,8 +20,7 @@ namespace Account.WebApi.Profiles
              .ForMember(destination => destination.FirstName, option => option.MapFrom(src =>
              src.Customer.FirstName))
              .ForMember(destination => destination.LastName, option => option.MapFrom(src =>
-              src.Customer.LastName));          
-           
+              src.Customer.LastName));  
             CreateMap<CustomerModel, CustomerDTO>();
             CreateMap<CustomerDTO, CustomerModel>();
             CreateMap<CustomerModel, CustomerEntity>();

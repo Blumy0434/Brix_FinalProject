@@ -27,7 +27,7 @@ namespace Account.Service
             }
             else
             {
-                throw new AccountNotFoundException();
+                throw new CustomerNotFoundException();
             }
         }
 

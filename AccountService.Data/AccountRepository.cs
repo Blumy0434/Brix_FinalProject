@@ -24,6 +24,7 @@ namespace Account.Data
             try
             {
                 AccountEntity accountEntity = await _accountContext.Accounts
+                    .Include(a => a.Customer)
                                 .FirstOrDefaultAsync(a => a.CustomerId.ToString() == (CustomerId.ToString().ToUpper()));
                 if (accountEntity != null)
                 {
@@ -31,13 +32,15 @@ namespace Account.Data
                     return accountModel;
                 }
                 else
+                {
                     throw new AccountNotFoundException();
+                }
             }
-            catch(AccountNotFoundException ex)
+            catch (AccountNotFoundException ex)
             {
                 throw ex;
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw new SystemException();
             }
