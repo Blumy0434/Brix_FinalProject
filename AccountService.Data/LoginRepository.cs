@@ -63,13 +63,12 @@ namespace Account.Data
             //{
             //    throw new Exception();
             //}
-
             try
             {
                 CustomerEntity customer = await _accountContext.Customers
                      .FirstOrDefaultAsync(c => c.Email == email
-                                            && c.Password == password);                
-                    return customer.Id;                
+                                            && c.Password == password);
+                return customer.Id;
             }
             catch
             {
