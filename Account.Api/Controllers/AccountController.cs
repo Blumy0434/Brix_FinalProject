@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Account.Service.Intefaces;
+﻿using Account.Service.Intefaces;
 using Account.Service.Models;
 using Account.WebApi.DTO;
 using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace Account.WebApi.Controllers
 {
@@ -25,7 +22,7 @@ namespace Account.WebApi.Controllers
         [HttpGet("GetAccountInfo")]
         public async Task<AccountDTO> Get([FromQuery]string guid)
         {
-            Guid guid1 =Guid.Parse(guid);        
+            Guid guid1 = Guid.Parse(guid);        
             AccountModel accountModel = await _accountService.GetAccountInfoAsync(guid1);
             return _mapper.Map<AccountDTO>(accountModel);
 
