@@ -25,3 +25,6 @@ C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Service\obj\Deb
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.dll
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.pdb
+C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Service\bin\Debug\netcoreapp3.1\Exceptions.dll
+C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Service\bin\Debug\netcoreapp3.1\Exceptions.pdb
+C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Service\obj\Debug\netcoreapp3.1\Account.Service.csproj.CopyComplete

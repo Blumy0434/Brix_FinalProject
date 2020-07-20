@@ -1,5 +1,6 @@
 ﻿using Account.Service.Intefaces;
 using Account.Service.Models;
+using Exceptions;
 using System;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
@@ -14,22 +15,21 @@ namespace Account.Service
             _loginRepository = loginRepository;
         }
 
-       
+
 
         public async Task<Guid> LoginAsync(string email, string password)
         {
-            string passwordAsHashCode = HashPassword(password);
-            bool isCustomerExist = await _loginRepository.IsCustomerExistAsync(email, passwordAsHashCode);
+            //bool passwordAsHashCode = VerifyHashedPassword(password);
+            bool isCustomerExist = await _loginRepository.IsCustomerExistAsync(email, password /*passwordAsHashCode*/);
             if (isCustomerExist)
             {
-                return await _loginRepository.LoginAsync(email, passwordAsHashCode);
+                return await _loginRepository.LoginAsync(email, password/*passwordAsHashCode*/);
             }
             else
             {
-                //throw new AccountNotFoundException();
-                throw new Exception();
-            }            
-        }        
+                throw new AccountNotFoundException();
+            }
+        }
 
         public async Task<bool> RegisterAsync(CustomerModel customerModel)
         {
@@ -37,7 +37,7 @@ namespace Account.Service
             if (isEmailValid)
             {
                 customerModel.Id = Guid.NewGuid();
-                customerModel.Password = HashPassword(customerModel.Password);
+                //customerModel.Password = HashPassword(customerModel.Password);
                 AccountRegisterModel account = new AccountRegisterModel
                 {
                     Id = Guid.NewGuid(),
@@ -49,9 +49,8 @@ namespace Account.Service
             }
             else
             {
-                // throw new DuplicateEmailException();
-                throw new Exception();
-            }            
+                throw new DuplicateEmailException();
+            }
         }
 
         private string HashPassword(string password)
@@ -72,5 +71,32 @@ namespace Account.Service
             Buffer.BlockCopy(buffer2, 0, dst, 0x11, 0x20);
             return Convert.ToBase64String(dst);
         }
+
+        //public static bool VerifyHashedPassword(string hashedPassword, string password)
+        //{
+        //    byte[] buffer4;
+        //    if (hashedPassword == null)
+        //    {
+        //        return false;
+        //    }
+        //    if (password == null)
+        //    {
+        //        throw new ArgumentNullException("password");
+        //    }
+        //    byte[] src = Convert.FromBase64String(hashedPassword);
+        //    if ((src.Length != 0x31) || (src[0] != 0))
+        //    {
+        //        return false;
+        //    }
+        //    byte[] dst = new byte[0x10];
+        //    Buffer.BlockCopy(src, 1, dst, 0, 0x10);
+        //    byte[] buffer3 = new byte[0x20];
+        //    Buffer.BlockCopy(src, 0x11, buffer3, 0, 0x20);
+        //    using (Rfc2898DeriveBytes bytes = new Rfc2898DeriveBytes(password, dst, 0x3e8))
+        //    {
+        //        buffer4 = bytes.GetBytes(0x20);
+        //    }
+        //    return ByteArraysEqual(buffer3, buffer4);
+        //}
     }
 }

@@ -1,6 +1,7 @@
 using Account.Data;
 using Account.Service;
 using Account.Service.Intefaces;
+using Account.WebApi.Miidleware;
 using Account.WebApi.Profiles;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
@@ -93,6 +94,8 @@ namespace Account.Api
                     "Bank API"
                     );
             });
+
+            app.UseMiddleware(typeof(AccountErrorHandlerMiddleware));
 
             app.UseAuthorization();
 
