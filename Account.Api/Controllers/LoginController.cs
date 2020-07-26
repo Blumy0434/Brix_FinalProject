@@ -25,11 +25,8 @@ namespace Account.WebApi.Controllers
         public async Task<ActionResult<Guid>> LoginAsync([FromBody] LoginDTO login)
         {
             Guid accountId = await _loginService.LoginAsync(login.Email, login.Password);
-            if (accountId != default(Guid))
-            {
-                return Ok(accountId);
-            }
-            return Unauthorized();
+            return Ok(accountId);
+            //לטפל בשגיאת חשבון לא נמצא שמחזירים 401 במידל...
         }
 
         [HttpPost("register")]
@@ -37,11 +34,8 @@ namespace Account.WebApi.Controllers
         {
             CustomerModel customerModel = _mapper.Map<CustomerModel>(customer);
             var response = await _loginService.RegisterAsync(customerModel);
-            if (response)
-            {
-                return Ok(response);
-            }
-            return BadRequest(false);
+            return Ok(response);
+            //לטפל בשגיאת מייל כפול שמחזירים פאלס ויצירת החשבון נכשל במידל...
         }
     }
 }

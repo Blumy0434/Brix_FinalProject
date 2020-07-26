@@ -1,0 +1,4 @@
+C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.csprojAssemblyReference.cache
+C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.AssemblyInfo.cs
+C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.NSB\obj\Debug\netcoreapp3.1\Account.NSB.csproj.CoreCompileInputs.cache

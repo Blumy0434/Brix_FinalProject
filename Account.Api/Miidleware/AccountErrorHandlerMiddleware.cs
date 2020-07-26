@@ -1,5 +1,6 @@
 ﻿using Exceptions;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -16,31 +17,41 @@ namespace Account.WebApi.Miidleware
         {
             _next = next;
         }
-        public async Task Invoke(HttpContext context)
+
+        public async Task Invoke(HttpContext context /* other dependencies */)
         {
             try
             {
-                await _next(context);
-                if (context.Response.StatusCode == StatusCodes.Status401Unauthorized)
-                {
-                    throw new UnauthorizedAccessException("Password or Email are not correct. try again!");
-                }
-                if (context.Response.StatusCode == StatusCodes.Status400BadRequest)
-                {
-                    throw new UnauthorizedAccessException("Action Failed. Please try again!");
-                }
+                await _next(context);                
             }
-            catch (AccountNotFoundException ex)
+            catch (Exception ex)
             {
-                await HandleExceptionsAsync(context, ex);
+                await HandleExceptionAsync(context, ex);
             }
         }
-        public async Task HandleExceptionsAsync(HttpContext context, Exception ex)
+        private static Task HandleExceptionAsync(HttpContext context, Exception ex)
         {
-            var code = new HttpStatusCode();
-            if (ex is AccountNotFoundException) code = HttpStatusCode.NotFound;
-            var result = JsonConvert.SerializeObject(new { error = ex.Message });
-          //  return await context.Response.WriteAsync(result);
+            
+            if (ex is DuplicateEmailException)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                var result = JsonConvert.SerializeObject(new { error = false });
+                return context.Response.WriteAsync(result);
+            }
+            if (ex is CustomerNotFoundException)
+            {                
+                context.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
+                var result = JsonConvert.SerializeObject(new { error = "Password or Email are not correct. try again!" });
+                return context.Response.WriteAsync(result);                
+            }
+            if (ex is AccountNotFoundException)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.NotFound;
+                var result = JsonConvert.SerializeObject(new { error = "There isn't such account!"});
+                return context.Response.WriteAsync(result);
+            }
+            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+            return context.Response.WriteAsync("Internal server Error - 500");
         }
     }
 }

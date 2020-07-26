@@ -13,6 +13,21 @@ C:\Users\WIN10\source\repos\Brix final project\AccountService.Data\obj\Debug\net
 C:\Users\WIN10\source\repos\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Service.dll
 C:\Users\WIN10\source\repos\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Service.pdb
 C:\Users\WIN10\source\repos\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csproj.CopyComplete
+F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.deps.json
+F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.runtimeconfig.json
+F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.runtimeconfig.dev.json
+F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.dll
+F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.pdb
+F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Service.dll
+F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Service.pdb
+F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csprojAssemblyReference.cache
+F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csproj.CoreCompileInputs.cache
+F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.AssemblyInfoInputs.cache
+F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.AssemblyInfo.cs
+F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csproj.CopyComplete
+F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.dll
+F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.pdb
+F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.genruntimeconfig.cache
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.deps.json
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.runtimeconfig.json
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.runtimeconfig.dev.json
@@ -28,20 +43,7 @@ C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\AccountService.Data\obj
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.dll
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.pdb
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.genruntimeconfig.cache
-F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.deps.json
-F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.runtimeconfig.json
-F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.runtimeconfig.dev.json
-F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.dll
-F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Data.pdb
-F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Service.dll
 F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Exceptions.dll
-F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Account.Service.pdb
 F:\Brix\Brix final project\AccountService.Data\bin\Debug\netcoreapp3.1\Exceptions.pdb
-F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csprojAssemblyReference.cache
-F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csproj.CoreCompileInputs.cache
-F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.AssemblyInfoInputs.cache
-F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.AssemblyInfo.cs
-F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.csproj.CopyComplete
-F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.dll
-F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.pdb
-F:\Brix\Brix final project\AccountService.Data\obj\Debug\netcoreapp3.1\Account.Data.genruntimeconfig.cache
+C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\AccountService.Data\bin\Debug\netcoreapp3.1\Exceptions.dll
+C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\AccountService.Data\bin\Debug\netcoreapp3.1\Exceptions.pdb
