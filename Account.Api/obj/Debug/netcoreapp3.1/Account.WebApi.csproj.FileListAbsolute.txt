@@ -196,12 +196,6 @@ C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Api\bin\Debug\n
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\User\Desktop\BrixFinalProject\Brix_FinalProject\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.MvcApplicationPartsAssemblyInfo.cache
-F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.csprojAssemblyReference.cache
-F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.csproj.CoreCompileInputs.cache
-F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.MvcApplicationPartsAssemblyInfo.cs
-F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.MvcApplicationPartsAssemblyInfo.cache
-F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.AssemblyInfoInputs.cache
-F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.AssemblyInfo.cs
 F:\Brix\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
 F:\Brix\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\appsettings.json
 F:\Brix\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -330,6 +324,12 @@ F:\Brix\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\Exceptions.dll
 F:\Brix\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\Account.Data.pdb
 F:\Brix\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\Account.Service.pdb
 F:\Brix\Brix final project\Account.Api\bin\Debug\netcoreapp3.1\Exceptions.pdb
+F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.csprojAssemblyReference.cache
+F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.csproj.CoreCompileInputs.cache
+F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.MvcApplicationPartsAssemblyInfo.cs
+F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.MvcApplicationPartsAssemblyInfo.cache
+F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.AssemblyInfoInputs.cache
+F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.AssemblyInfo.cs
 F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.RazorTargetAssemblyInfo.cache
 F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\Account.WebApi.csproj.CopyComplete
 F:\Brix\Brix final project\Account.Api\obj\Debug\netcoreapp3.1\staticwebassets\Account.WebApi.StaticWebAssets.Manifest.cache

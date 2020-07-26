@@ -1,17 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Tracking.WebApi.Profiles;
 using Transaction.Data;
 using Transaction.Service;
@@ -45,7 +38,16 @@ namespace Tracking.WebApi
 
             IMapper mapper = mappingConfig.CreateMapper();
             services.AddSingleton(mapper);
-
+            services.AddSwaggerGen(setupAction =>
+            {
+                setupAction.SwaggerDoc(
+                    "TransactionOpenAPISpecification",
+                    new Microsoft.OpenApi.Models.OpenApiInfo()
+                    {
+                        Title = "Transaction API",
+                        Version = "1"
+                    });
+            });
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(
@@ -71,7 +73,14 @@ namespace Tracking.WebApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseSwagger();
+            app.UseSwaggerUI(setupAction =>
+            {
+                setupAction.SwaggerEndpoint(
+                    "/swagger/TransactionOpenAPISpecification/swagger.json",
+                    "Transaction API"
+                    );
+            });
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

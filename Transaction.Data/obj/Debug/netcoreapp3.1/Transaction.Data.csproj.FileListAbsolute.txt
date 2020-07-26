@@ -1,15 +1,4 @@
-F:\Brix\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.deps.json
-F:\Brix\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.runtimeconfig.json
-F:\Brix\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.runtimeconfig.dev.json
-F:\Brix\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.dll
-F:\Brix\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Data.pdb
-F:\Brix\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Service.dll
-F:\Brix\Brix final project\Transaction.Data\bin\Debug\netcoreapp3.1\Transaction.Service.pdb
 F:\Brix\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.csprojAssemblyReference.cache
 F:\Brix\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.csproj.CoreCompileInputs.cache
 F:\Brix\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.AssemblyInfoInputs.cache
 F:\Brix\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.AssemblyInfo.cs
-F:\Brix\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.csproj.CopyComplete
-F:\Brix\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.dll
-F:\Brix\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.pdb
-F:\Brix\Brix final project\Transaction.Data\obj\Debug\netcoreapp3.1\Transaction.Data.genruntimeconfig.cache
