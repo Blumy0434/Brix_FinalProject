@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Account.NSB.Services\Account.NSB.Service.csproj" />
+    <ProjectReference Include="..\AccountService.Data\Account.Data.csproj" />
+  </ItemGroup>
+
+</Project>
