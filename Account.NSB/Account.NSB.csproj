@@ -15,7 +15,7 @@
     <PackageReference Include="NServiceBus" Version="7.3.0" />
     <PackageReference Include="NServiceBus.Persistence.Sql" Version="6.0.2" />
     <PackageReference Include="NServiceBus.RabbitMQ" Version="6.0.0" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
   <ItemGroup>
